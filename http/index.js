@@ -1,5 +1,21 @@
-const { request } = require("http");
+// Credits to https://github.com/shalusinghal/node-rest-api-without-express
 
-request({ hostname: "localhost", port: 8000, method: "POST" }, response => {
-  response.on("data", chunk => process.stdout.write(chunk.toString()));
-}).end("Hello Server");
+const http = require("http");
+const router = require("./router");
+const routes = require("./routes");
+
+const port = 3005;
+
+process.on("uncaughtException", err => {
+  console.log("uncaughtException");
+  console.error(err.stack);
+  console.log(err);
+});
+
+const server = http.createServer(async (req, res) => {
+  await router(req, res, routes);
+});
+
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
