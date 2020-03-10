@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/migramcastillo/nodejs-certification-training/issues"
   },
-  "homepage": "https://github.com/migramcastillo/nodejs-certification-training#readme"
+  "homepage": "https://github.com/migramcastillo/nodejs-certification-training#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
