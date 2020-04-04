@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap testing/async.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/migramcastillo/nodejs-certification-training#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "human-time": "0.0.2",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "tap": "^14.10.6"
   }
 }

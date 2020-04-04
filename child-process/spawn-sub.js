@@ -1,3 +1,6 @@
+/*
+  Executing child spawn with environment variables
+ */
 const { fork, spawn, exec } = require("child_process");
 const child = spawn("node ./sub.js", {
   shell: true,

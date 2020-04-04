@@ -1,4 +1,7 @@
-// Credits to https://github.com/shalusinghal/node-rest-api-without-express
+/*
+  This is an example of how to build a http server with the http native module of NodeJS
+  Credits to https://github.com/shalusinghal/node-rest-api-without-express
+ */
 
 const http = require("http");
 const router = require("./router");

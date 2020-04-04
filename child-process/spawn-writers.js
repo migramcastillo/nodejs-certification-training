@@ -1,3 +1,6 @@
+/*
+  Listening for spawn events
+ */
 const { spawn } = require("child_process");
 
 const child = spawn("node ./heavy-spawn.js", { shell: true });

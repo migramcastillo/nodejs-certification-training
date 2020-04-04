@@ -1,3 +1,6 @@
+/*
+  Executing a NodeJS fork executing heavy processes and not blocking the event loop
+ */
 const { fork } = require("child_process");
 
 console.log("Waiting for children to exec");

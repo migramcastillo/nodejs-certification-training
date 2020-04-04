@@ -1,6 +1,7 @@
+/*
+  This is an example of how to caught a process exception
+ */
 const fs = require("fs");
-
-//  Read 3 files and stop if there is an error
 
 process.on("uncaughtException", (err, origin) => {
   process.stderr.write(

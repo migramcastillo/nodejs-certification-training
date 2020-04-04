@@ -1,3 +1,6 @@
+/*
+  This is an example of how to replace the fs.exists deprectaed API
+ */
 const fs = require("fs");
 
 const exists = file =>

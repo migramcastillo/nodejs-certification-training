@@ -1,3 +1,6 @@
+/*
+  Executing pipe (| symbol) on CLI mode using child_process
+ */
 const { exec } = require("child_process");
 
 exec("find . -type f | wc -l", (err, stdout, stderr) => {

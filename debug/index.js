@@ -1,3 +1,7 @@
+/*
+  Run this with `node --inspect` and with a Browser use the Debug Tools for NodeJS
+  This is example is taken from the book Node Cookbook: Actionable Solutions
+ */
 const express = require("express");
 const app = express();
 
